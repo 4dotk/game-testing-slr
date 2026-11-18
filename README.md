@@ -20,7 +20,7 @@ diagram. Every number in this README can be recomputed from the files listed bel
 | `CITATION.cff` | Citation metadata (read by GitHub and Zenodo) |
 | `search/search_strings.md` | Exact query per source (IEEE Xplore, ACM DL, Google Scholar G1 to G7), filters and record counts |
 | `search/exports/` | Raw BibTeX exports as downloaded: `google_scholar_G1.bib` to `google_scholar_G7.bib`, `acm_dl.bib`, `ieee_xplore.bib` |
-| `screening/criteria.md` | Inclusion (I1 to I8) and exclusion (E1 to E10) criteria |
+| `screening/criteria.md` | Eligibility criteria (version 2): inclusion I1 to I6, exclusion E1 to E6, and the codes for the full-text exclusions |
 | `screening/screening_decisions.csv` | One row per screened record (202): id, title, year, DOI, source export(s), first and final decision of reviewer A and B, final decision, Rayyan label, reason |
 | `screening/agreement.py` | Recomputes percent agreement, Cohen's kappa and the number of conflicts from `screening_decisions.csv` |
 | `screening/raw/rayyan_articles.ris` | Current Rayyan export of the 202 deduplicated records (final decisions in `N1`) |

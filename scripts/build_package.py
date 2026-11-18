@@ -57,7 +57,7 @@ THEMES = {
             'albaghajati2023', 'feldmeier2022']),
 }
 
-SCREEN_REASON = 'not recorded per record (screened against I1-I8 / E1-E10, see criteria.md)'
+SCREEN_REASON = 'not recorded per record (see criteria.md)'
 
 
 def norm(s):
