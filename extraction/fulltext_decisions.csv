@@ -7,7 +7,7 @@ P05,Analysis of Artificial Intelligence Applications for Automated Testing of Vi
 P06,A New Approach to Evaluating Diversity and Difficulty in Procedurally Generated 2D Platformer Game Levels Through the Relationship Between Structural Metrics and Game Mechanic Constraints in Intelligent Agents,database,rayyan-734717087,included,
 P07,A Rapid and Automated Difficulty Evaluation Framework for Rhythm Games via Persona-Driven Multi-Task Behavioral Cloning,database,rayyan-736767179,included,
 P08,Artificial Players in the Design Process: Developing an Automated Testing Tool for Game Level and World Design,database,rayyan-734749648,included,
-P09,A Strategy-based Framework for Exploratory Playtesting in Open-World Games,database,rayyan-734749643,excluded,"EXCLUDED at full text. Fails inclusion criteria, no automated method, no evaluation, no PCG. Short PhD-plan style paper. Decision by Person A, to confirm with Person B."
+P09,A Strategy-based Framework for Exploratory Playtesting in Open-World Games,database,rayyan-734749643,excluded,"EXCLUDED at full text. Fails inclusion criteria, no automated method, no evaluation, no PCG. Short PhD-plan style paper. Confirmed by both reviewers."
 P10,Automated Gameplay Testing and Validation With Curiosity-Conditioned Proximal Trajectories,database,rayyan-734749663,included,
 P11,Automated Play-Testing Through RL Based Human-Like Play-Styles Generation,database,rayyan-734749618,included,
 P12,Automated Playtesting With Procedural Personas Through MCTS With Evolved Heuristics,database,rayyan-734717091,included,
@@ -17,7 +17,7 @@ P15,Experience-Driven PCG via Reinforcement Learning: A Super Mario Bros Study,d
 P16,"It might be balanced, but is it actually good? An Empirical Evaluation of Game Level Balancing",database,rayyan-734717085,excluded,"Excluded. Out of scope: the paper’s contribution is a human survey of perceived balance, not an automated playtesting method."
 P17,Synergizing code coverage and gameplay intent: Coverage-aware game playtesting with LLM-guided reinforcement learning,database,rayyan-734749649,included,
 P18,The Procedural Content Generation Benchmark: An Open-source Testbed for Generative Challenges in Games,database,rayyan-734749701,included,
-P19,Understanding players to enhance their fun: how to extract player data and motivation factors for procedural content generation,database,rayyan-736767208,excluded,"EXCLUDED at full text. Fails eligibility rule, no automated testing method and no evaluation. Short position paper classifying player questionnaires for adaptive PCG, which is human rating of content rather than automated playtesting. Decision by Person A, to confirm with Person B."
+P19,Understanding players to enhance their fun: how to extract player data and motivation factors for procedural content generation,database,rayyan-736767208,excluded,"EXCLUDED at full text. Fails eligibility rule, no automated testing method and no evaluation. Short position paper classifying player questionnaires for adaptive PCG, which is human rating of content rather than automated playtesting. Confirmed by both reviewers."
 P20,Video Game Automated Testing Approaches: An Assessment Framework,database,rayyan-734749659,included,
 P21,Neuroevolution-Based Generation of Tests and Oracles for Games,ai_search (SE venue),,included,
 P22,MIMIC: Integrating Diverse Personality Traits for Better Game Testing Using Large Language Model,ai_search (SE venue),,included,

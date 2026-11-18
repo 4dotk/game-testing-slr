@@ -9,7 +9,8 @@ Inputs (source data, not modified except where noted):
     screening/raw/screening_decisions.csv        reviewers' decisions table (titles, first decisions)
     screening/raw/rayyan_articles.ris            current Rayyan export (final decisions)
     screening/raw/rayyan_decision_log.csv        Rayyan decision log (first decisions, labels)
-    ai_search/se_venues_search.xlsx              AI-assisted search shortlist
+    ai_search/candidates.csv                     AI-assisted search shortlist (columns shortlist_no to
+                                                 pcg_relevance are input; paper_id, decision, reason are recomputed)
     extraction/extraction_log.csv                completed extraction form
     extraction/quality_scores.csv                Q1 to Q6 item scores (the `total` column is recomputed)
     references.bib                               BibTeX keys, venues and years of included papers
@@ -19,7 +20,7 @@ Outputs:
     extraction/fulltext_decisions.csv
     extraction/extraction_table.csv
     extraction/quality_scores.csv  (totals)
-    ai_search/candidates.csv
+    ai_search/candidates.csv  (paper_id, decision, reason)
     synthesis/synthesis_matrix.csv
 
 Standard library only.
@@ -28,8 +29,6 @@ import csv
 import glob
 import os
 import re
-import zipfile
-import xml.etree.ElementTree as ET
 from collections import Counter, defaultdict
 
 # Reviewer notes on the full-text exclusions of P14 and P16 (recorded as cell
@@ -59,7 +58,6 @@ THEMES = {
 }
 
 SCREEN_REASON = 'not recorded per record (screened against I1-I8 / E1-E10, see criteria.md)'
-M = '{http://schemas.openxmlformats.org/spreadsheetml/2006/main}'
 
 
 def norm(s):
@@ -210,30 +208,15 @@ write_csv('synthesis/synthesis_matrix.csv', ['paper_id', 'bibtex_key', 'title'] 
 print('  papers per theme:', {t: len(p) for t, (_, p) in THEMES.items()})
 
 # ---------------------------------------------------------------- AI-assisted shortlist
-z = zipfile.ZipFile('ai_search/se_venues_search.xlsx')
-strings = [''.join(t.text or '' for t in si.iter(M + 't'))
-           for si in ET.fromstring(z.read('xl/sharedStrings.xml')).findall(M + 'si')]
-shortlist = []
-for row in ET.fromstring(z.read('xl/worksheets/sheet2.xml')).iter(M + 'row'):
-    cells = {}
-    for c in row.findall(M + 'c'):
-        v, t = c.find(M + 'v'), c.get('t')
-        if t == 's' and v is not None:
-            val = strings[int(v.text)]
-        elif t == 'inlineStr':
-            val = ''.join(x.text or '' for x in c.iter(M + 't'))
-        else:
-            val = v.text if v is not None else ''
-        cells[re.match(r'[A-Z]+', c.get('r')).group()] = val
-    shortlist.append(cells)
+SHORTLIST_COLS = ['shortlist_no', 'group', 'title', 'authors', 'year', 'venue_as_seen', 'venue_type',
+                  'verification', 'pcg_relevance']
+shortlist = read_csv('ai_search/candidates.csv')
 
 full_texts = {norm(d['Title (auto)'])[:40]: d['Paper ID'] for d in log}
 db_titles = [bt for bt, _ in bib_titles]
 cand_rows = []
-for c in shortlist[1:]:
-    if not c.get('A', '').strip().isdigit():
-        continue
-    k = norm(c.get('C', ''))[:40]
+for c in shortlist:
+    k = norm(c['title'])[:40]
     pid = next((v for kk, v in full_texts.items() if kk.startswith(k[:35]) or k.startswith(kk[:35])), '')
     if any(bt.startswith(k[:35]) for bt in db_titles):
         decision, why, pid = 'duplicate', 'also found by database search', ''
@@ -241,8 +224,6 @@ for c in shortlist[1:]:
         decision, why = 'included', f'full text assessed and included as {pid}'
     else:
         decision, why = 'excluded', 'not recorded per record'
-    cand_rows.append([c.get(col, '') for col in 'ABCDEFGHIJ'] + [pid, decision, why])
-write_csv('ai_search/candidates.csv',
-          ['shortlist_no', 'group', 'title', 'authors', 'year', 'venue_as_seen', 'venue_type',
-           'verification', 'pcg_relevance', 'note', 'paper_id', 'decision', 'reason'], cand_rows)
+    cand_rows.append([c[col] for col in SHORTLIST_COLS] + [pid, decision, why])
+write_csv('ai_search/candidates.csv', SHORTLIST_COLS + ['paper_id', 'decision', 'reason'], cand_rows)
 print('  candidate decisions:', dict(Counter(r[-2] for r in cand_rows)))

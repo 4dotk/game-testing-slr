@@ -25,13 +25,12 @@ diagram. Every number in this README can be recomputed from the files listed bel
 | `screening/agreement.py` | Recomputes percent agreement, Cohen's kappa and the number of conflicts from `screening_decisions.csv` |
 | `screening/raw/rayyan_articles.ris` | Current Rayyan export of the 202 deduplicated records (final decisions in `N1`) |
 | `screening/raw/rayyan_decision_log.csv` | Rayyan's timestamped decision log (every decision change), with reviewer identities replaced by A/B |
-| `screening/raw/rayyan_articles_before_2026-11-18_update.csv` | Earlier Rayyan export (CSV), before the decision update described under "PRISMA counts" |
 | `screening/raw/screening_decisions.csv` | The reviewers' own decisions table (first and final decisions, columns named by reviewer), made before that update |
-| `ai_search/se_venues_search.xlsx` | AI-assisted search workbook: summary, shortlist of 32, verbatim query log S12 to S44, findings and decisions |
+| `ai_search/search_log.csv` | Verbatim query log of the AI-assisted search (S12 to S44) |
 | `ai_search/candidates.csv` | The 32 shortlisted records with decision (included / duplicate / excluded) and reason |
 | `ai_search/prompt_used.md` | How the AI-assisted search was run (tool, logged queries, verification) |
 | `extraction/extraction_template.csv` | Blank data extraction form: field, what to record, allowed values |
-| `extraction/extraction_log.csv` | Completed extraction for all 29 full texts (P01 to P29), 30 columns |
+| `extraction/extraction_log.csv` | Completed extraction for all 29 full texts (P01 to P29), 29 columns |
 | `extraction/extraction_table.csv` | 25 included papers: reference, year, venue, setting, genre, primary goal, main technique, agent type, quality score |
 | `extraction/fulltext_decisions.csv` | All 29 full texts: route, decision, exclusion reason |
 | `extraction/quality_scores.csv` | Q1 to Q6 and total per paper; excluded papers are NA |
@@ -103,7 +102,7 @@ that produce it:
 One record, Rupp et al. (2024), was initially excluded at title/abstract screening
 after a reviewer conflict. After further discussion, the reviewers decided to include
 it; it was assessed at full text and included. Rayyan was updated on 2026-11-18 to
-reflect this decision, which is why an earlier export is kept in `screening/raw/`.
+reflect this decision; the change is recorded in `screening/raw/rayyan_decision_log.csv`.
 
 ## Known limitations
 
@@ -112,8 +111,8 @@ reflect this decision, which is why an earlier export is kept in `screening/raw/
   record of what was retrieved.
 - **The AI-assisted search route is not reproducible byte-for-byte.** It used a
   general web search engine with AI assistance; results and the assistant's output
-  vary between runs. The verbatim queries and the shortlist are logged in
-  `ai_search/se_venues_search.xlsx`; the exact instruction prompt was not retained
+  vary between runs. The verbatim queries are logged in `ai_search/search_log.csv`
+  and the shortlist in `ai_search/candidates.csv`; the exact instruction prompt was not retained
   (see `ai_search/prompt_used.md`).
 - **On-topic game-venue papers found by the AI-assisted route were not included.**
   That route targeted software engineering venues (ICSE, ESEC/FSE, ASE, ISSTA, TSE,
@@ -136,9 +135,9 @@ reflect this decision, which is why an earlier export is kept in `screening/raw/
 
 ## Use of generative AI
 
-Generative AI (Claude) assisted with the search, with checking the data extraction,
-and with formatting. The authors made all inclusion, exclusion and quality-scoring
-decisions.
+Claude (Anthropic) was used during several stages of this review, including identifying candidate papers through targeted web searches, checking data extraction notes against full texts, suggesting extraction entries and preliminary quality assessments, and proposing codes for thematic synthesis. It also suggested edits to the manuscript and assisted with LaTeX formatting and table preparation.
+
+The authors screened all candidate papers, verified the extracted information, made all inclusion and exclusion decisions, finalized quality assessments and synthesis themes, and reviewed all generated outputs. The authors take full responsibility for the accuracy, interpretation, and integrity of this work.
 
 ## Citation
 

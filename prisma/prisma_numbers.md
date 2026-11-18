@@ -26,7 +26,7 @@ to include it; it was assessed at full text and included. Rayyan was updated on
 
 | Box | Count | Derivation |
 |-----|------:|------------|
-| Shortlisted | 32 | Rows in `ai_search/candidates.csv` (sheet "Shortlist (32)" of `se_venues_search.xlsx`) |
+| Shortlisted | 32 | Rows in `ai_search/candidates.csv` |
 | Duplicates of database records | 3 | Shortlist #9, #10, #12, whose titles appear in the database exports (`decision = duplicate`) |
 | Assessed | 29 | 32 − 3 |
 | Excluded | 21 | `decision = excluded` |

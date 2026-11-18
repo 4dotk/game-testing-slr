@@ -1,6 +1,6 @@
 # Prompt used for the AI-assisted search
 
-The AI-assisted search used Claude (Anthropic) with web search. The exact prompt was not retained; the text below is a reconstruction of its content by the authors and is approximate, not verbatim. The queries it actually ran are logged verbatim in the ‘Search Log S12–S44’ sheet of TSE_PCG_Research_Papers.xlsx. The dates in that log were recorded by the AI assistant and have not been independently verified. All candidate papers were screened and verified by the authors.
+The AI-assisted search used Claude (Anthropic) with web search. The exact prompt was not retained; the text below is a reconstruction of its content by the authors and is approximate, not verbatim. The queries it actually ran are logged verbatim in `ai_search/search_log.csv` (S12–S44); S12–S25 are corpus searches and S26–S44 are metadata-verification lookups for shortlisted papers. The log has no dates. All candidate papers were screened and verified by the authors.
 
 ## Approximate reconstruction of the prompt
 

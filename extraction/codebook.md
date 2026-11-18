@@ -7,7 +7,7 @@ The blank data extraction form (fields, what to record, allowed values) is
 paper says, with page number; write `NR` (not reported) instead of leaving a field
 blank; interpretation goes in `Reviewer comment`.
 
-`extraction_log.csv` is the completed form: one row per full text (P01 to P29), 30
+`extraction_log.csv` is the completed form: one row per full text (P01 to P29), 29
 columns, exported from the reviewers' extraction workbook. Extractors are given as
 Person A (reviewer A) and Person B (reviewer B).
 P14 and P16 were excluded at full text before extraction, so their rows are empty.
@@ -58,9 +58,8 @@ strength of evidence, not to exclude papers.
 Excluded papers have `NA` (not assessed), never 0. Summary: 25 included papers,
 total 118, mean 4.72.
 
-The log's `Quality (0-6)` column was a working copy and differs from the Q1 to Q6
-sum for four papers (P07 5.5 vs 5.0, P11 4.5 vs 4.0, P13 5.5 vs 5.0, P26 2.0 vs 5.0).
-The item scores are authoritative and are used everywhere in this package.
+Quality scores are kept only in `quality_scores.csv`; the extraction log has no
+quality column.
 
 ## synthesis_matrix.csv (in ../synthesis/)
 
