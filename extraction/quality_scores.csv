@@ -1,0 +1,30 @@
+paper_id,title,status,Q1,Q2,Q3,Q4,Q5,Q6,total
+P01,A Modular Framework for Automated Evaluation of Procedural Content Generation in Serious Games With Deep Reinforcement Learning Agents,included,1,0,1,1,1,1,5
+P02,Technical Challenges of Deploying Reinforcement Learning Agents for Game Testing in AAA Games,included,1,0,0.5,0,1,0.5,3
+P03,Testing Open-World Games: A Minecraft Case Study,included,1,0,1,0,1,1,4
+P04,Playtesting: What is Beyond Personas,included,1,0,1,1,1,1,5
+P05,Analysis of Artificial Intelligence Applications for Automated Testing of Video Games,included,1,0,0,0,0.5,0.5,2
+P06,A New Approach to Evaluating Diversity and Difficulty in Procedurally Generated 2D Platformer Game Levels Through the Relationship Between Structural Metrics and Game Mechanic Constraints in Intelligent Agents,included,1,0.5,1,0.5,0,0.5,3.5
+P07,A Rapid and Automated Difficulty Evaluation Framework for Rhythm Games via Persona-Driven Multi-Task Behavioral Cloning,included,1,0,1,1,1,1,5
+P08,Artificial Players in the Design Process: Developing an Automated Testing Tool for Game Level and World Design,included,1,1,0.5,0,1,1,4.5
+P09,A Strategy-based Framework for Exploratory Playtesting in Open-World Games,excluded,NA,NA,NA,NA,NA,NA,NA
+P10,Automated Gameplay Testing and Validation With Curiosity-Conditioned Proximal Trajectories,included,1,0.5,1,0.5,0.5,1,4.5
+P11,Automated Play-Testing Through RL Based Human-Like Play-Styles Generation,included,1,0,1,1,0.5,0.5,4
+P12,Automated Playtesting With Procedural Personas Through MCTS With Evolved Heuristics,included,1,0.5,1,0.5,0.5,1,4.5
+P13,Coverage-Aware Guidance for Novelty-Driven Exploration in Automated Game Testing Under Sparse-Reward 3-D Environments,included,1,0,1,1,1,1,5
+P14,Advancing Level Generation in Super Mario Bros.: A Proposal for Combining Diffusion Models with Real-Time Playability Assessment,excluded,NA,NA,NA,NA,NA,NA,NA
+P15,Experience-Driven PCG via Reinforcement Learning: A Super Mario Bros Study,included,1,1,1,1,1,0.5,5.5
+P16,"It might be balanced, but is it actually good? An Empirical Evaluation of Game Level Balancing",excluded,NA,NA,NA,NA,NA,NA,NA
+P17,Synergizing code coverage and gameplay intent: Coverage-aware game playtesting with LLM-guided reinforcement learning,included,1,0,1,1,1,1,5
+P18,The Procedural Content Generation Benchmark: An Open-source Testbed for Generative Challenges in Games,included,1,1,1,0.5,0.5,0.5,4.5
+P19,Understanding players to enhance their fun: how to extract player data and motivation factors for procedural content generation,excluded,NA,NA,NA,NA,NA,NA,NA
+P20,Video Game Automated Testing Approaches: An Assessment Framework,included,1,0.5,0.5,0,1,1,4
+P21,Neuroevolution-Based Generation of Tests and Oracles for Games,included,1,1,1,1,1,1,6
+P22,MIMIC: Integrating Diverse Personality Traits for Better Game Testing Using Large Language Model,included,1,1,1,1,1,0.5,5.5
+P23,Automatically Detecting Visual Bugs in HTML5 Canvas Games,included,1,1,1,1,1,1,6
+P24,Using Reinforcement Learning for Load Testing of Video Games,included,1,1,1,1,1,0.5,5.5
+P25,Wuji: Automatic Online Combat Game Testing Using Evolutionary Deep Reinforcement Learning,included,1,0,1,1,1,1,5
+P26,Diversity-oriented testing for competitive game agent via constraint-guided adversarial agent training,included,1,1,1,1,0.5,0.5,5
+P27,GLIB: Towards Automated Test Oracle for Graphically-Rich Applications,included,1,0.5,1,1,0.5,1,5
+P28,GameRTS: A Regression Testing Framework for Video Games,included,1,0.5,1,1,0.5,1,5
+P29,Simulation-Driven Balancing of Competitive Game Levels with Reinforcement Learning,included,1,1,1,1,1,1,6

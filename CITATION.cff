@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite it and the paper."
+type: dataset
+title: "Replication package: Automated Video Game Testing with Agents and Test Oracles: A Systematic Review and Implications for PCG"
+authors:
+  - given-names: Karthikeya
+    family-names: Aduri
+  - given-names: Shantanu
+    family-names: Mande
+repository-code: "https://github.com/4dotk/game-testing-slr"
+license:
+  - CC-BY-4.0
+  - MIT
+keywords:
+  - systematic literature review
+  - video game testing
+  - procedural content generation
+  - test oracles
+  - replication package

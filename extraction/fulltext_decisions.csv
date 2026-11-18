@@ -1,0 +1,30 @@
+paper_id,title,route,screening_record_id,full_text_decision,exclusion_reason
+P01,A Modular Framework for Automated Evaluation of Procedural Content Generation in Serious Games With Deep Reinforcement Learning Agents,database,rayyan-734717081,included,
+P02,Technical Challenges of Deploying Reinforcement Learning Agents for Game Testing in AAA Games,database,rayyan-734749661,included,
+P03,Testing Open-World Games: A Minecraft Case Study,database,rayyan-736767160,included,
+P04,Playtesting: What is Beyond Personas,database,rayyan-734749634,included,
+P05,Analysis of Artificial Intelligence Applications for Automated Testing of Video Games,database,rayyan-734749652,included,
+P06,A New Approach to Evaluating Diversity and Difficulty in Procedurally Generated 2D Platformer Game Levels Through the Relationship Between Structural Metrics and Game Mechanic Constraints in Intelligent Agents,database,rayyan-734717087,included,
+P07,A Rapid and Automated Difficulty Evaluation Framework for Rhythm Games via Persona-Driven Multi-Task Behavioral Cloning,database,rayyan-736767179,included,
+P08,Artificial Players in the Design Process: Developing an Automated Testing Tool for Game Level and World Design,database,rayyan-734749648,included,
+P09,A Strategy-based Framework for Exploratory Playtesting in Open-World Games,database,rayyan-734749643,excluded,"EXCLUDED at full text. Fails inclusion criteria, no automated method, no evaluation, no PCG. Short PhD-plan style paper. Decision by Person A, to confirm with Person B."
+P10,Automated Gameplay Testing and Validation With Curiosity-Conditioned Proximal Trajectories,database,rayyan-734749663,included,
+P11,Automated Play-Testing Through RL Based Human-Like Play-Styles Generation,database,rayyan-734749618,included,
+P12,Automated Playtesting With Procedural Personas Through MCTS With Evolved Heuristics,database,rayyan-734717091,included,
+P13,Coverage-Aware Guidance for Novelty-Driven Exploration in Automated Game Testing Under Sparse-Reward 3-D Environments,database,rayyan-734749673,included,
+P14,Advancing Level Generation in Super Mario Bros.: A Proposal for Combining Diffusion Models with Real-Time Playability Assessment,database,rayyan-736767137,excluded,"Excluded. Not a published paper, so it fails our inclusion criteria"
+P15,Experience-Driven PCG via Reinforcement Learning: A Super Mario Bros Study,database,rayyan-734717089,included,
+P16,"It might be balanced, but is it actually good? An Empirical Evaluation of Game Level Balancing",database,rayyan-734717085,excluded,"Excluded. Out of scope: the paper’s contribution is a human survey of perceived balance, not an automated playtesting method."
+P17,Synergizing code coverage and gameplay intent: Coverage-aware game playtesting with LLM-guided reinforcement learning,database,rayyan-734749649,included,
+P18,The Procedural Content Generation Benchmark: An Open-source Testbed for Generative Challenges in Games,database,rayyan-734749701,included,
+P19,Understanding players to enhance their fun: how to extract player data and motivation factors for procedural content generation,database,rayyan-736767208,excluded,"EXCLUDED at full text. Fails eligibility rule, no automated testing method and no evaluation. Short position paper classifying player questionnaires for adaptive PCG, which is human rating of content rather than automated playtesting. Decision by Person A, to confirm with Person B."
+P20,Video Game Automated Testing Approaches: An Assessment Framework,database,rayyan-734749659,included,
+P21,Neuroevolution-Based Generation of Tests and Oracles for Games,ai_search (SE venue),,included,
+P22,MIMIC: Integrating Diverse Personality Traits for Better Game Testing Using Large Language Model,ai_search (SE venue),,included,
+P23,Automatically Detecting Visual Bugs in HTML5 Canvas Games,ai_search (SE venue),,included,
+P24,Using Reinforcement Learning for Load Testing of Video Games,ai_search (SE venue),,included,
+P25,Wuji: Automatic Online Combat Game Testing Using Evolutionary Deep Reinforcement Learning,ai_search (SE venue),,included,
+P26,Diversity-oriented testing for competitive game agent via constraint-guided adversarial agent training,ai_search (SE venue),,included,
+P27,GLIB: Towards Automated Test Oracle for Graphically-Rich Applications,ai_search (SE venue),,included,
+P28,GameRTS: A Regression Testing Framework for Video Games,ai_search (SE venue),,included,
+P29,Simulation-Driven Balancing of Competitive Game Levels with Reinforcement Learning,database,rayyan-734717092,included,

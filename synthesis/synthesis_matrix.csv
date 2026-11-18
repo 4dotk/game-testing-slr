@@ -1,0 +1,26 @@
+paper_id,bibtex_key,title,T1,T2,T3
+P01,kalafatis2025,A Modular Framework for Automated Evaluation of Procedural Content Generation in Serious Games With Deep Reinforcement Learning Agents,0,1,0
+P02,gillberg2023,Technical Challenges of Deploying Reinforcement Learning Agents for Game Testing in AAA Games,0,0,0
+P03,chen2025minecraft,Testing Open-World Games: A Minecraft Case Study,0,1,0
+P04,ariyurek2023,Playtesting: What is Beyond Personas,0,1,1
+P05,zarembo2019,Analysis of Artificial Intelligence Applications for Automated Testing of Video Games,0,0,1
+P06,perez2025,A New Approach to Evaluating Diversity and Difficulty in Procedurally Generated 2D Platformer Game Levels Through the Relationship Between Structural Metrics and Game Mechanic Constraints in Intelligent Agents,0,1,0
+P07,gil2026,A Rapid and Automated Difficulty Evaluation Framework for Rhythm Games via Persona-Driven Multi-Task Behavioral Cloning,0,1,0
+P08,stahlke2020,Artificial Players in the Design Process: Developing an Automated Testing Tool for Game Level and World Design,0,1,1
+P10,sestini2024,Automated Gameplay Testing and Validation With Curiosity-Conditioned Proximal Trajectories,1,0,1
+P11,ledepelletier2022,Automated Play-Testing Through RL Based Human-Like Play-Styles Generation,0,1,1
+P12,holmgard2019,Automated Playtesting With Procedural Personas Through MCTS With Evolved Heuristics,0,1,1
+P13,jang2026,Coverage-Aware Guidance for Novelty-Driven Exploration in Automated Game Testing Under Sparse-Reward 3-D Environments,1,0,0
+P15,shu2021,Experience-Driven PCG via Reinforcement Learning: A Super Mario Bros Study,0,1,0
+P17,mu2026,Synergizing code coverage and gameplay intent: Coverage-aware game playtesting with LLM-guided reinforcement learning,1,0,0
+P18,khalifa2025,The Procedural Content Generation Benchmark: An Open-source Testbed for Generative Challenges in Games,0,1,0
+P20,albaghajati2023,Video Game Automated Testing Approaches: An Assessment Framework,0,0,1
+P21,feldmeier2022,Neuroevolution-Based Generation of Tests and Oracles for Games,1,0,1
+P22,chen2025mimic,MIMIC: Integrating Diverse Personality Traits for Better Game Testing Using Large Language Model,1,1,0
+P23,macklon2022,Automatically Detecting Visual Bugs in HTML5 Canvas Games,0,0,0
+P24,tufano2022,Using Reinforcement Learning for Load Testing of Video Games,0,0,0
+P25,zheng2019wuji,Wuji: Automatic Online Combat Game Testing Using Evolutionary Deep Reinforcement Learning,1,0,0
+P26,ma2025,Diversity-oriented testing for competitive game agent via constraint-guided adversarial agent training,0,0,0
+P27,chen2021glib,GLIB: Towards Automated Test Oracle for Graphically-Rich Applications,0,0,0
+P28,yu2023gamerts,GameRTS: A Regression Testing Framework for Video Games,0,0,0
+P29,rupp2024,Simulation-Driven Balancing of Competitive Game Levels with Reinforcement Learning,0,1,0

@@ -47,3 +47,17 @@ A general web search engine, with AI assistance, was used to find candidate
 papers from ICSE, ESEC/FSE, ASE, ISSTA, TSE and TOSEM. Each candidate's venue and
 metadata were checked against the publisher's page. The queries and decisions
 are logged in `targeted_search/targeted_search_log.xlsx`. Eight papers were included.
+
+---
+
+## Notes added for the replication package
+
+- File paths above refer to the original layout. In this package the exports are in
+  `search/exports/`, and the targeted-search log is `ai_search/se_venues_search.xlsx`.
+- Search date: October 2026 for all three sources (IEEE Xplore, ACM DL, Google Scholar).
+- Google Scholar: seven queries, top three result pages (30 results) each. The 211
+  exported records are G1, G2, G3 and G7 (121) plus G4 to G6 (90). The G2 export also
+  contains one saved Scholar results page, which was imported and excluded at screening.
+- Filters as recorded above: publication years 2015 to 2026; IEEE Xplore Command
+  Search on All Metadata; ACM DL Advanced Search on the ACM Full-Text Collection
+  (Abstract/Title fields); Google Scholar first 30 results per query, ranked by relevance.

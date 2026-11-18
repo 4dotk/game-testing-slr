@@ -1,0 +1,25 @@
+group,field,what_to_record,allowed_values
+Bibliographic,Paper ID,From Paper Tracker (P01...),P##
+Bibliographic,"Authors, year, venue",Citation info,Text
+Bibliographic,Publication type,,Journal / Conference / Workshop / Preprint / Thesis
+Context,Game(s) / environment studied,Name the game or testbed,"Text (e.g. Super Mario Bros, Minecraft, in-house AAA)"
+Context,Game genre,,Platformer / Open-world / Rhythm / Puzzle / Serious game / Strategy / FPS / Other
+Context,Industry vs academic setting,,Academic / Industry / Both
+Problem,Primary goal,What problem does the paper address?,Bug finding / Difficulty evaluation / Level validation / Balancing / Player-experience modelling / Coverage-exploration / PCG evaluation / Survey-framework
+Problem,Role of PCG,How does PCG relate to the work?,Generator evaluated / Generator being built / Not PCG (testing only) / Both
+Method,AI technique (main),,RL / MCTS / Evolutionary / Behavioural cloning / Imitation / Diffusion-generative / Rule-search / LLM / Hybrid / Other
+Method,Agent / persona type,How are play-styles or players represented?,Persona-based / Human-like / Curiosity-driven / Goal-driven / Random / None / Other
+Method,Human data used?,"Player traces, surveys, playtests",Yes / No + short description
+Method,Tools / frameworks / benchmarks,"Unity ML-Agents, Gym, PCGRL, etc.",Text
+Evaluation,Evaluation metrics,"What is measured (coverage, win rate, difficulty, diversity, playability, bugs found...)",Text list
+Evaluation,Validation approach,How do authors show it works?,Case study / Quantitative vs baseline / Human study / Industrial deployment / No validation
+Evaluation,Scale of evaluation,"# levels, games, agents, participants",Numbers
+Findings,Key results,"2-4 sentences, quote numbers",Text + page no.
+Findings,Stated limitations,As reported by authors,Text
+Findings,Future work stated,,Text
+Quality,Quality score (0-6),Sum of checklist items (see Quality Appraisal),0-6
+Mapping to RQs,RQ1 evidence,Replace with your real RQs once fixed,Text
+Proposal-driven,Comparison baseline,"What the method is compared against (random/scripted agent, search, earlier tool, none)",Random / Scripted / Search / Model-based / Earlier tool / Human / None
+Proposal-driven,Testing budget,"Time, episodes, steps, compute used",Text / NR
+Proposal-driven,Testing objective,"Failure detection, playability/completability, difficulty, other",Text
+Proposal-driven,Evaluates procedurally generated content?,Key for relevance; many SE papers test fixed games,Yes (explicit) / Partly / No (existing game)
