@@ -58,3 +58,5 @@ Q1 to Q6 per paper). Excluded papers are NA.
 ## Figure
 
 `prisma.pdf` in this folder is the flow diagram used in the paper.
+
+Note on the figure. The right-hand (other methods) lane of prisma.pdf shows only the papers that entered the review: 8 records from websites, 8 reports sought, 8 assessed, none excluded. The full screening of the targeted search (32 shortlisted, 3 duplicates of database records, 29 assessed, 21 excluded, 8 included) is in the AI-assisted search table above and in ai_search/candidates.csv. The figure labels the criteria EC and IC, while screening/criteria.md uses E and I (EC5 = E5, EC2 = E2, IC4 = I4).

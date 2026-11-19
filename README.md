@@ -96,6 +96,7 @@ that produce it:
   → 4 excluded → **17 included**.
 - AI-assisted route: 32 shortlisted → 3 duplicates of database records → 29 assessed
   → 21 excluded → **8 included** from SE venues.
+  The PRISMA figure shows only the 8 papers of this route that entered the review; the full shortlist funnel is in prisma/prisma_numbers.md.
 - **25 studies included** in total (`extraction/extraction_table.csv`).
 - Quality: 25 papers, total 118, mean 4.72 (`extraction/quality_scores.csv`).
 

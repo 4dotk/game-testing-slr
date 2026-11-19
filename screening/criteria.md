@@ -51,6 +51,8 @@ cover automated game testing or playtesting.
 | P16 | Human survey only | E2 |
 | P19 | No automated method (position paper) | I4 |
 
+The PRISMA figure uses the labels EC and IC for E and I (EC5 = E5, EC2 = E2, IC4 = I4).
+
 ## Change note
 
 Version 1 of this file (I1 to I8, E1 to E10) required a PCG subject (I4, I6),
